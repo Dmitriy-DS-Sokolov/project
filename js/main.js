@@ -1,10 +1,10 @@
 $(function() {
-    //карусель отзывов
-    $('.js-client__info-carousel').slick({
+    //карусель клиентов
+    $('.js-client-carousel').slick({
         dots: true, 
         arrows: true, 
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         responsive: [
             {
@@ -16,6 +16,40 @@ $(function() {
               }
             }
         ]
+    });
+
+    // карусель отзывов 
+    $('.js-rewiews-carousel').slick({
+        dots: true, 
+        arrows: true, 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [
+            {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+            }
+        ]
+    });
+
+    // карусель галереи   
+    $('.slider-for-gallery').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav-gallery'
+    });
+    $('.slider-nav-gallery').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for-gallery',
+    dots: true  
     });
 
     //плавный скролл по анкору

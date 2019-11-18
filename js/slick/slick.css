@@ -86,7 +86,7 @@
 }
 .slick-slide img
 {
-    display: block;
+    display: flex;
 }
 .slick-slide.slick-loading img
 {
@@ -96,10 +96,14 @@
 {
     pointer-events: none;
 }
-/*.slick-initialized .slick-slide
+.slick-initialized .slick-slide
+{
+    display: flex;
+}
+/* .slick-initialized .slick-slide
 {
     display: block;
-}*/
+} */
 .slick-loading .slick-slide
 {
     visibility: hidden;
