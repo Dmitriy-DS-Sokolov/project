@@ -122,7 +122,6 @@ ul {
     background-color: #014145;
 }
 
-
 /*Стили для шапки*/
 
 .header{
@@ -493,9 +492,13 @@ ul {
 }
 .video-gallery__content{
 	color: #ffffff;
-	height: 450px;
+	height: 500px;
 	text-align: center;
 
+}
+.html5gallery {
+	margin: 0 auto;
+	/*display: none;*/
 }
 .section-five__promo{
 	text-align: center;
